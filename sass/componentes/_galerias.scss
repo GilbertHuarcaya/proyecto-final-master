@@ -1,0 +1,38 @@
+.galeria {
+	min-width: 200px;
+	width: 50%;
+	min-height: 250px;
+	height: auto;
+	margin: 10px auto;
+	padding: 20px 0 0 30px;
+	justify-content: space-evenly;
+	border-radius: 20px;
+	background-color: $color-claro;
+	@include caja;
+	&__foto-principal {
+		float: left;
+		margin-right: 10px;
+	}
+	&__fotos-adicionales img {
+		display: none;
+		height: 70px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		@include media(desktop-m) {
+			display: inline;
+		}
+	}
+	h2 {
+		margin-bottom: 10px;
+		font-weight: 600;
+		font-size: 20px;	
+		// incluir aca
+		@include titulos($Fuente2);
+	}		
+	img {
+		border-radius: 10px;
+	}
+}
+
+
+	
